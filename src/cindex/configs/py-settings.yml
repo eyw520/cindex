@@ -1,0 +1,6 @@
+scope:
+  include:
+    - "*.py"
+  exclude:
+    - .venv/
+    - node_modules/

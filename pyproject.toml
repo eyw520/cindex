@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "codecontext"
+version = "0.0.1"
+description = "CodeContext"
+authors = ["eden <eyw520@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+dotenv = "^0.9.9"
+types-pyyaml = "^6.0.12.20250402"
+pyyaml = "^6.0.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+black = "^23.0.0"
+flake8 = "^6.0.0"
+mypy = "^1.5.0"
+isort = "^5.10.1"
+
+[tool.poetry.scripts]
+cindex = "cindex.cli:main"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 2
+line_length = 120
+profile = "black"
+use_parentheses = true
+
+[tool.autoflake]
+in-place = true
+
+[tool.ruff]
+line-length = 120
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

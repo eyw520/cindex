@@ -1,0 +1,12 @@
+scope:
+  include:
+    - "*.py"
+    - "*.ts"
+    - "*.tsx"
+    - "package.json"
+    - "pyproject.toml"
+  exclude:
+    - .venv/
+    - node_modules/
+    - .next/
+    - "*.d.ts"
