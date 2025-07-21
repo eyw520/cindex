@@ -1,12 +1,12 @@
-# CodeContext
+# cindex
 
 ## Overview
 
-This project will serve as the backend and infrastructure for `codecontext`, a lightweight script that helps you index a codebase as context for LLMs.
+`cindex` is a lightweight script that helps you index a codebase as context for LLMs.
 
 ## Setup
 
-This project uses `poetry` to manage dependencies. To install the project, run the following commands:
+This project uses `poetry` to manage dependencies. To install the project, run the following commands from the project root:
 
 ```bash
 python -m venv .venv
